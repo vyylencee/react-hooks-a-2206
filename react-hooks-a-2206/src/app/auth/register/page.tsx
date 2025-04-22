@@ -115,10 +115,10 @@ const RegisterPage = () => {
                                 value: 10,
                                 message: "Nomor telepon minimal 10 angka",
                             },
-                            pattern: {
-                                value: /^[0-9]+$/,
-                                message: "Nomor telepon harus berupa angka",
-                            }
+                            // pattern: {
+                            //     // value: /^[0-9]+$/,
+                            //     message: "Nomor telepon harus berupa angka",
+                            // }
                         })}
                         className={`w-full px-4 py-2.5 rounded-lg border focus:ring-2 focus:outline-none transition-colors
                             ${errors.nomorTelp ? "border-red-500 focus:ring-red-200" : "border-gray-300 focus:border-blue-500 focus:ring-blue-200"}`}

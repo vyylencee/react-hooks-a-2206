@@ -87,7 +87,7 @@ const LoginPage = () => {
         setErrors({});
         generateCaptcha();
         setAttempts(3);
-        toast.success('Kesempatan Login Berhasil DiReset', { theme: 'dark'});
+        toast.success('Kesempatan Login Berhasil DiReset', { theme: 'dark', position: 'top-right' });
     };
     
 
@@ -96,7 +96,7 @@ const LoginPage = () => {
         const newErrors = validateForm();
 
         if (attempts === 0) {
-            toast.error('Kesempatan Login Habis!', { theme: 'dark'});
+            toast.error('Kesempatan Login Habis!', { theme: 'dark', position: 'top-right' });
             return;
         }
         
