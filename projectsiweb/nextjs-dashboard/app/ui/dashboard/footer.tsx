@@ -2,14 +2,16 @@ import Link from "next/link";
 
 export default function Footer () {
   return (
-    <footer className='left-0 bottom-0 w-screen bg-red-700 py-7 shadow-md z-50'>
-      <div className='flex items-center justify-between px-6'>
-      <div className="flex items-center flex-grow">
-        <div>
-
+      <footer className="bg-[#D82B2B] text-white text-center py-6 mt-6">
+        <h4 className="mb-2">© 2025 VAPO Portfolio. All rights reserved.</h4>
+        <div className="flex justify-center space-x-4">
+          <a href="https://www.instagram.com/">
+            Instagram
+          </a>
+          <a href="https://www.whatsapp.com/contact">
+            WhatsApp
+          </a>
         </div>
-      </div>
-      </div>
-    </footer>
-  )
+      </footer>
+  );
 }

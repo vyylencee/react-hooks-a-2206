@@ -1,5 +1,6 @@
 import { poppins, quicksand, fredoka } from '@/app/ui/fonts';
 import { NavigasiUtama } from '@/app/ui/dashboard/topnav';
+import Footer from '@/app/ui/dashboard/footer';
 
 export default function ProfilePage() {
   const profile = [
@@ -21,7 +22,7 @@ export default function ProfilePage() {
   ];
 
   return (
-    <div className={`flex min-h-screen flex-col p-6 bg-yellow-100 text-black ${poppins.className} ${quicksand.className} ${fredoka.className}`}>
+    <div className={`flex min-h-screen flex-col bg-yellow-100 overflow-hidden text-black ${poppins.className} ${quicksand.className} ${fredoka.className}`}>
       <NavigasiUtama />
       <div className='flex justify-center mt-20 ml-7'></div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
@@ -51,10 +52,9 @@ export default function ProfilePage() {
            </div>
          </div>
        </div>
-       
-       
         ))}
       </div>
+      <Footer />
     </div>
   );
 }

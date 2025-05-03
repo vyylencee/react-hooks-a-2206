@@ -11,6 +11,8 @@ import piattos from "@/public/piattos.webp";
 import oreo from "@/public/oreo.webp";
 import uht from "@/public/uht.png";
 import teh from "@/public/tehpucuk.png"
+import Footer from "@/app/ui/dashboard/footer";
+import Detailproduct from "@/app/admin/produk/edit/page";
 
 export default function CataloguePage() {
     return (
@@ -223,6 +225,7 @@ export default function CataloguePage() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </main>
     )
 }

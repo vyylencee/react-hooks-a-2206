@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useRef } from 'react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid';
 import { poppins, quicksand } from '@/app/ui/fonts';
-import { NavigasiUtama } from '@/app/ui/dashboard/topnav';
+import { NavigasiUtama, TopNav1 } from './ui/dashboard/topnav';
 import Footer from './ui/dashboard/footer';
 
 const promoImages = [
@@ -43,12 +43,9 @@ export default function Page() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col p-6 bg-yellow-100">
-      {/* Header */}
+    <main className="flex min-h-screen flex-col bg-yellow-100 overflow-hidden">
       <NavigasiUtama />
-      <div className='flex justify-center mt-20 ml-7'></div>
-      {/* bagian Promo */}
-      <section className="p-4">
+      <section className="mt-28 p-4">
         <h2 className={`${poppins.className} text-xl font-bold mb-2`}>Promo bulan ini</h2>
         <div className="relative">
           <div
@@ -84,8 +81,6 @@ export default function Page() {
           </button>
         </div>
       </section>
-
-      {/* Produk Terlaris */}
       <section className="p-6">
         <h2 className={`${poppins.className} text-xl font-bold mb-4`}>Produk Terlaris Bulan Ini</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
@@ -111,10 +106,11 @@ export default function Page() {
           ))}
         </div>
       </section>
+      <section className="bg-transparent p-6">
 
-      {/* Metode Pembayaran */}
-      <section className="bg-[#FFF1C1] p-6">
-        <h2 className={`${poppins.className} text-center font-bold mb-4 text-lg`}>Metode Pembayaran</h2>
+        <h2 className={`${poppins.className} text-center font-bold mb-4 text-lg`}>
+          Metode Pembayaran
+        </h2>
         <div className="flex justify-center">
           <Image
             src="/metode-pembayaran.png"
@@ -129,3 +125,5 @@ export default function Page() {
     </main>
   );
 }
+
+

@@ -11,6 +11,7 @@ import ibudananak from '@/public/popok.png';
 import warung from '@/public/warung.png';
 import Link from 'next/link';
 import { NavigasiUtama } from '@/app/ui/dashboard/topnav';
+import Footer from '@/app/ui/dashboard/footer';
 
 export default function AboutPage() {
     const testimonials = [
@@ -249,6 +250,7 @@ export default function AboutPage() {
                     </Image>
                 </div>
             </div>
+            <Footer />
         </main>
     )
 }

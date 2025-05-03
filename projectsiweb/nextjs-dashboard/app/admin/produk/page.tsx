@@ -1,4 +1,5 @@
-import Link from 'next/link';
+'use client';
+
 import { TopNav2 } from '@/app/ui/dashboard/topnav';
 import { poppins,quicksand } from '@/app/ui/fonts';
 import Image from 'next/image';
@@ -8,13 +9,16 @@ import gambar3 from '@/public/oreo.webp';
 import gambar4 from '@/public/piattos.webp';
 import { EditButton } from '@/app/ui/button';
 import { DeleteButton } from '@/app/ui/button';
-
+import { Divide } from 'lucide-react';
 
 export default function AdminPage() {
   return (
     <main className="flex min-h-screen flex-col p-6 bg-yellow-100">
       <TopNav2 />
-      <div className='flex justify-center mt-28 ml-7'>
+      <button onClick={() => window.location.href = '/admin/produk/tambah'} className={`${poppins.className} text-center text-lg font-semibold text-black mt-28 w-52 h-10 rounded-lg justify-center border-4 border-red-800 hover:bg-red-800 hover:text-white transition-colors`}>
+        Tambah Produk
+      </button>
+      <div className='flex justify-center mt-5 ml-7'>
         <div className='bg-white shadow-md p-8 rounded-lg mx-20 ml-4 mb-4'>
           <Image
             alt=''
@@ -26,10 +30,12 @@ export default function AdminPage() {
             <div className='inline-flex ml-4'></div>
           <a className={`${quicksand.className} text-justify text-black text-md flex-1 ml-5 mr-72`}>Ultra Milk Susu UHT Full Cream 250 ml</a>
           <a className={`${poppins.className} text-justify text-black text-md font-semibold flex-1 ml-5 mr-10`}>Rp 8.500</a>
-          <div className='inline-flex ml-10'></div>
-          <EditButton />
-          <div className='inline-flex ml-4'></div>
-          <DeleteButton />
+          <div onClick={() => window.location.href = '/admin/produk/edit'} className='inline-flex ml-10'>
+            <EditButton />
+          </div>
+          <div className='inline-flex ml-4'>
+            <DeleteButton />
+          </div>
         </div>
       </div>
       

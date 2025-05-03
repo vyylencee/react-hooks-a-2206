@@ -1,5 +1,28 @@
-## Next.js App Router Course - Starter
+List Anggota Kelompok
+- Evi Novita Gultom / 231712206
+- Grace Carolina Sarumpaet / 231712225
+- Vania Bella Christina / 231712253
 
-This is the starter template for the Next.js App Router Course. It contains the starting code for the dashboard application.
+Website ini berisikan tentang informasi toko kelontong dengan nama toko "Klongga Market", tampilan yang ada dirancang menggunakan sebuah tools yaitu Figma dan untuk memberikan pengalaman yang baik bagi pengguna diberikan fungsi tambahan dan mengimplementasikannya lewat bahasa pemrograman Next.Js . Pada website ini terdapat 2 sudut pandang yaitu dari pelanggan dan pemilik/admin. Pada pelanggan diberikan beberapa halaman yang dapat diakses yaitu beranda, tentang, katalog, kontak dan profil pelanggan. Pada pemilik/admin diberikan 5 fungsi yaitu create, read, update, delete, search yang biasa dikenal dengan istilah CRUDS dan kami implementasikan ke dalam pengelolaan produk dan transaksi yang ada di Klongga Market. 
 
-For more information, see the [course curriculum](https://nextjs.org/learn) on the Next.js Website.
+Link Github : https://github.com/vyylencee/projectsiweb.git
+
+Link Deploy :
+
+Pembagian Tugas Kelompok :
+Auth 
+Sign In, Sign Up, Reset Password : Evi
+
+POV UI Customer
+Dashboard : Vania
+About : Evi dan Grace (testimoni)
+Catalogue : Evi
+Contact : Grace 
+Profile : Grace
+Footer : Vania
+Navigation Bar : Evi
+
+POV UI Admin
+Dashboard : Vania
+Kelola Produk : Evi (halaman Utama) dan Grace
+Kelola Transaksi : Evi
