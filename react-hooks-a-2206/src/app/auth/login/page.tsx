@@ -148,7 +148,6 @@ const LoginPage = () => {
                     </div>
                     {errors.password && (
                         <p className="text-red-600 text-sm italic mt-1">{errors.password}</p>
-
                     )}
                 </div>
 
